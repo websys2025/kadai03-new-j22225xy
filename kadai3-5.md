@@ -24,8 +24,17 @@
   const item =items[i];
 ### Q5-3. buyItemの処理内容について説明せよ。
 * 商品購入の可否判定
+
+  if (item.stock <= 0){
+      console.log("在庫がありません。");
+  }else{
+  }
 * 商品在庫を減らす処理
+
+  item.stock--
 * 商品番号のエラー処理
+
+  if(no < 1 || no > items.length)
 ### Q5-4. プログラムの考察
 * データ構造について
 * 商品一覧表示と購入処理を関数化したメリット
